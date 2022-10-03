@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+  font-family: arial;
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+@media print {
+  .navigation {
+    visibility: hidden;
+  }
+}
+
+/* -------------phone style------------- */
+
+@media (max-width: 600px) {
+  .navigation {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navigation .logo {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+  }
+  .navigation .logo img {
+    width: 170px;
+    height: 100px;
+  }
+  .navigation .navList {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    border: 2px solid black;
+    width: 100%;
+    box-shadow: 2px 3px;
+  }
+  .navigation .navList li {
+    border-right: 2px solid black;
+    width: 25%;
+    height: 50px;
+  }
+  .navigation .navList li a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .breadcrumbs {
+    margin-top: 20px;
+  }
+  .breadcrumbs .brList {
+    display: flex;
+    list-style: none;
+  }
+  .breadcrumbs .brList li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .breadcrumbs .brList li .home {
+    text-decoration: underline;
+    color: blue;
+    font-size: 20px;
+  }
+  .breadcrumbs .brList li .dvds {
+    text-decoration: underline;
+    color: blue;
+    font-size: 20px;
+  }
+  .breadcrumbs .brList li .lt10 {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  section h1 {
+    margin-top: 20px;
+  }
+  section .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section .product .pro {
+    width: 100%;
+    margin: 10px auto;
+    height: 550px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+  }
+  section .product .pro img {
+    margin: 15px auto;
+    width: 95%;
+    display: block;
+  }
+  section .product .pro h3 {
+    font-size: 35px;
+    margin: 25px 15px;
+  }
+  section .product .pro p {
+    font-size: 25px;
+    margin: 10px 15px;
+  }
+  section .product .pro p:first-of-type {
+    color: grey;
+  }
+  section .product .pro p span {
+    color: blue;
+    text-decoration: underline;
+  }
+  section .product .pro p:last-of-type {
+    color: red;
+  }
+}
+
+/* -------------tablet style------------- */
+
+@media screen and (min-width: 601px) and (max-width: 989px) {
+  .navigation {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navigation .logo {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+  }
+  .navigation .logo img {
+    width: 170px;
+    height: 100px;
+  }
+  .navigation .navList {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    border: 2px solid black;
+    width: 100%;
+    box-shadow: 2px 3px;
+  }
+  .navigation .navList li {
+    border-right: 2px solid black;
+    width: 25%;
+    height: 50px;
+  }
+  .navigation .navList li a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .breadcrumbs {
+    margin-top: 20px;
+  }
+  .breadcrumbs .brList {
+    display: flex;
+    list-style: none;
+  }
+  .breadcrumbs .brList li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .breadcrumbs .brList li .home {
+    text-decoration: underline;
+    color: blue;
+    font-size: 20px;
+  }
+  .breadcrumbs .brList li .dvds {
+    text-decoration: underline;
+    color: blue;
+    font-size: 20px;
+  }
+  .breadcrumbs .brList li .lt10 {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  section h1 {
+    margin-top: 20px;
+  }
+  section .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section .product .pro {
+    width: 45%;
+    margin: 10px auto;
+    height: 470px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+  }
+  section .product .pro img {
+    margin: 15px auto;
+    width: 95%;
+    display: block;
+  }
+  section .product .pro h3 {
+    font-size: 35px;
+    margin: 25px 15px;
+  }
+  section .product .pro p {
+    font-size: 25px;
+    margin: 10px 15px;
+  }
+  section .product .pro p:first-of-type {
+    color: grey;
+  }
+  section .product .pro p span {
+    color: blue;
+    text-decoration: underline;
+  }
+  section .product .pro p:last-of-type {
+    color: red;
+  }
+}
+
+/* -------------desktop style------------- */
+
+@media (min-width: 990px) {
+  .navigation,
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .logo {
+    margin: 10px;
+  }
+  .navigation .logo img {
+    width: 200px;
+  }
+  .navigation .navList li a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    margin: 30px;
+    color: black;
+  }
+  .navigation .navList li a:hover {
+    color: red;
+  }
+  .breadcrumbs {
+    margin-top: 20px;
+  }
+  .breadcrumbs .brList li a {
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+  }
+  .breadcrumbs .brList li a:hover {
+    color: red;
+  }
+  .breadcrumbs .brList li {
+    margin-right: 20px;
+  }
+  section h1 {
+    margin-top: 20px;
+  }
+  section .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  section .product .pro {
+    text-decoration: none;
+    color: black;
+    width: 260px;
+    height: 300px;
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  section .product .pro:hover {
+    width: 300px;
+    height: 340px;
+  }
+  section .product .pro img {
+    margin: 5px auto;
+    width: 95%;
+    display: block;
+  }
+  section .product .pro h3 {
+    margin: 10px 5px;
+  }
+  section .product .pro p {
+    margin-left: 5px;
+  }
+  section .product .pro p:first-of-type {
+    color: grey;
+  }
+  section .product .pro p span {
+    text-decoration: underline;
+  }
+  section .product .pro p:last-of-type {
+    color: green;
+  }
+}
